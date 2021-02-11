@@ -1,0 +1,8 @@
+[build]
+  functions = "./functions"
+
+# Allows writing "/api/example" instead of "/.netlify/functions/example"
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
